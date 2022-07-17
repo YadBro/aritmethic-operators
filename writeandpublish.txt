@@ -1,0 +1,47 @@
+Yadi Apriyadi
+
+resume for how to write and publish to npm
+
+(Make sure you have typescript dependencies installed)
+
+1. npm init --scope=@my-scope or npm init --scope=@your-company-name
+2. Modifications package.json
+- change value in main to "main": "dist/index.js"
+- change or add value in types to "types": "dist/index.d.ts"
+- change or add value in files to "files" : ["/dist"]
+3. npx tsc --init or tsc --init
+4. Modifications tsconfig.json
+
+-- like this --
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noimplicitany": true,
+    "declaration": true,
+
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+
+5. Create source folder (src)
+6. Create folder with name your package into src folder
+7. Create index.ts file in your package folder (for export all your function in your package folder)
+8. Create index.ts file in src folder (root folder of src, for export all any in your package folder)
+9. Compiled your package folder to dist folder (typescript into javascript with npx tsc or tsc)
+
+=== Preparing for publish your package into npm ===
+10. Make sure you are logged in (npm login)
+11. Now you can publish your package into npm with (npm publish)
+
+Note :
+If you are get the error like this:
+402 Payment Required - PUT https://registry.npmjs.org/@yadiganteng32%2faritmetic-operators - You must sign up for private packages
+
+Because at the time you publish your package, it is private publish
+So you need to change your package to public publish with (npm publish --access public)
+
+And Congratulations, your package is published into npm 🤩
