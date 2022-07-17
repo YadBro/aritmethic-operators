@@ -20,6 +20,6 @@
     "babel-jest": "^28.1.3"
   },
   "dependencies": {
-    "@yadiganteng32/aritmetic-operators": "^1.0.0"
+    "@yadiganteng32/aritmetic-operators": "^1.0.1"
   }
 }
