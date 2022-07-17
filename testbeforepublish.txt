@@ -1,0 +1,6 @@
+1. Create folder with your package name but add `-test` to the end
+2. Create `package.json` with (npm init -y)
+3. Create new functionality or feature in your package
+4. Export your new functionality or feature in your package
+5. Run `tsc` or `npx tsc` to compile your package
+6. Linked your folder test to your package folder with `npm link <destination your package folder>`
