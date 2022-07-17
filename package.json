@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@yadiganteng32/aritmetic-operators",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add 2 number",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
